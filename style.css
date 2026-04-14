@@ -231,8 +231,10 @@ html, body {
 /* ---------- responsive tweaks ---------- */
 @media (max-width: 640px) {
   .char-group { width: 90vw; }
-  .welcome-box { min-width: 0; width: 90%; font-size: 14px; padding: 10px 16px 10px 56px; }
+  .welcome-box { min-width: 0; width: 90%; font-size: 14px; padding: 10px 16px 10px 56px; margin-top: -6px; }
   .welcome-new { width: 34px; left: 10px; }
   .logo { width: 80vw; margin-bottom: -18px; }
-  #enter-btn img { width: 84px; }
+  #enter-btn { max-width: 90vw; }
+  #enter-btn img { width: 100%; max-width: 260px; }
+  .coming-text { font-size: 14px; letter-spacing: 1px; }
 }
