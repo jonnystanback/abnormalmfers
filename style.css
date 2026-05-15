@@ -309,15 +309,16 @@ body.locked { overflow: hidden; height: 100vh; }
 .concentric-box {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  /* taller aspect so the gray area can hold bigger text over more lines */
+  aspect-ratio: 4 / 3;
   background-image: url("topguys/coloredbox.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .concentric-content {
   position: absolute;
-  /* tighter horizontal inset so the text sits in the gray inner area */
-  inset: 20% 22% 18% 22%;
+  /* narrower horizontally + tighter vertically so bigger text fills more space */
+  inset: 16% 25% 14% 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -346,8 +347,8 @@ body.locked { overflow: hidden; height: 100vh; }
 .concentric-content .s2-text {
   margin: 0;
   font-family: "W95FA", "MS Sans Serif", Tahoma, sans-serif;
-  font-size: 30px;
-  line-height: 1.25;
+  font-size: 34px;
+  line-height: 1.2;
   color: #000;
 }
 
