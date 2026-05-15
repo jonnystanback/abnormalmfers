@@ -12,30 +12,124 @@
   <meta name="twitter:image" content="socialpreview.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="locked">
   <main id="stage">
-    <img class="logo" src="abnormal_logo.png" alt="Abnormal mfers" />
-
-    <div class="characters">
-      <img class="char-group" src="characters.png" alt="Abnormal mfers characters" />
+    <div class="home-hero">
+      <img class="logo" src="abnormal_logo.png" alt="Abnormal mfers" />
+      <div class="home-frame">
+        <img class="cycle-img auto-cycle" id="home-cycle" alt="" aria-hidden="true" />
+      </div>
     </div>
 
-    <div class="welcome-box">
-      <img class="welcome-new" src="new.gif" alt="NEW" />
-      <span class="welcome-text">coming soon to Base</span>
-    </div>
-
-    <div id="enter-btn" role="button">
-      <img src="comingthismay.png" alt="" />
-      <span class="coming-text">coming this may</span>
+    <div id="enter-btn" role="button" aria-label="Enter">
+      <img src="enter.gif" alt="Enter" />
     </div>
   </main>
+
+  <section id="section-2">
+    <div class="s2-inner">
+      <div class="s2-hero">
+        <img class="welcome-side welcome-left" src="welcome.gif" alt="Welcome" />
+        <div class="s2-center">
+          <div class="topguys-row">
+            <img src="topguys/Untitled_Artwork-3%2072.png" alt="" aria-hidden="true" />
+            <img src="topguys/Untitled_Artwork-7%2023.png" alt="" aria-hidden="true" />
+            <img src="topguys/Untitled_Artwork-8%2021.png" alt="" aria-hidden="true" />
+            <img src="topguys/Untitled_Artwork-9%2019.png" alt="" aria-hidden="true" />
+            <img src="topguys/Untitled_Artwork%2057%2047.png" alt="" aria-hidden="true" />
+            <img src="topguys/Group%2036461.png" alt="" aria-hidden="true" />
+            <img src="topguys/redmfer.png" alt="" aria-hidden="true" />
+            <img src="topguys/bluemfer%204.png" alt="" aria-hidden="true" />
+          </div>
+          <div class="concentric-box">
+            <div class="concentric-content">
+              <p class="s2-text">
+                Abnormal Mfers is a 5,000-supply NFT collection on Base, with
+                proceeds funding season two of The Normal Mfer animated show.
+                The team made the show first (ten full episodes, already out)
+                and is selling the collection second so you know what to expect
+                more of.
+              </p>
+              <div class="concentric-social">
+                <a href="https://x.com/abnormalmfers" target="_blank" rel="noopener noreferrer" aria-label="X">
+                  <img src="xlogo.svg" alt="X" />
+                </a>
+                <a href="https://www.youtube.com/@CC0Studios" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                  <img src="youtubelogo.png?v=2" alt="YouTube" />
+                </a>
+                <a href="https://opensea.io/collection/abnormal-mfers-official/overview" target="_blank" rel="noopener noreferrer" aria-label="OpenSea">
+                  <img src="opeansealogo.webp" alt="OpenSea" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="welcome-side welcome-right" src="welcome.gif" alt="Welcome" />
+      </div>
+    </div>
+  </section>
+
+  <section id="section-3">
+    <img class="s3-title" src="art.gif" alt="Art" />
+    <div class="s3-inner">
+      <div class="s2-box s3-box">
+        <img class="s2-fire" src="firebanner.gif" alt="" aria-hidden="true" />
+        <p class="s2-text">
+          Abnormal mfers was created by Infinite Fun, the creative team behind
+          DeGods, y00ts, MidEvils, and more. This collection has some things
+          we’ve never done before, like color coordinated generation, dozens of
+          alternate body types, and mixed media images.
+        </p>
+      </div>
+      <div class="s3-face" id="s3-face" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section id="section-4">
+    <div class="s4-stage" id="s4-stage" aria-hidden="true"></div>
+    <div class="s4-frame-wrap">
+      <div class="s4-frame">
+        <img class="cycle-img" id="s4-cycle" alt="" aria-hidden="true" />
+        <div class="s4-build-overlay" id="s4-build-overlay" aria-hidden="true"></div>
+      </div>
+      <div class="s4-controls">
+        <button class="s4-generate" id="s4-generate" type="button">GENERATE</button>
+        <button class="s4-generate s4-build-btn" id="s4-build" type="button">BUILD YOUR OWN <span class="kind-of">(kind of)</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="opensea-bar">
+    <p class="opensea-line">THE COLLECTION IS NOW LIVE ON OPENSEA</p>
+    <a class="opensea-link" href="https://opensea.io/collection/abnormal-mfers-official/overview" target="_blank" rel="noopener noreferrer">HERE</a>
+  </section>
+
+  <section id="stream-section">
+    <p class="stream-title">STREAM SEASON 1 BELOW</p>
+    <div class="stream-frame">
+      <iframe
+        src="https://www.youtube.com/embed/kGD2fmJHN_E?list=PLiUKVS5JPu62UQKgAB7y-sOdByjClixWt"
+        title="Abnormal Mfers Season 1"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </section>
+
+  <footer id="learn-more-footer" aria-label="Learn more"></footer>
 
   <div class="new-banner" id="new-banner"></div>
 
   <!-- Free-floating decorative gifs (above everything) -->
   <div class="float-layer" id="float-layer" aria-hidden="true"></div>
 
-  <script src="script.js"></script>
+  <button id="do-not-press" type="button" aria-label="Do not press">
+    DO NOT<br />PRESS
+  </button>
+
+  <script defer src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script defer src="script.js"></script>
 </body>
 </html>
