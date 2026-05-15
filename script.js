@@ -83,13 +83,16 @@ function rand(min, max) {
 
 function spawnGifs(count) {
   layer.innerHTML = "";
+  const isMobile = window.innerWidth < 640;
+  const sizeMult = isMobile ? 0.55 : 1;
+  const adjustedCount = isMobile ? Math.round(count * 0.5) : count;
   const pool = FLOATERS.slice().sort(() => Math.random() - 0.5);
-  for (let i = 0; i < count; i++) {
+  for (let i = 0; i < adjustedCount; i++) {
     const { src, size } = pool[i % pool.length];
     const img = document.createElement("img");
     img.src = src;
     img.className = "floater";
-    const s = rand(size[0], size[1]);
+    const s = rand(size[0], size[1]) * sizeMult;
     img.style.width = `${s}px`;
     img.style.height = "auto";
     img.style.left = `${rand(2, 92)}vw`;
